@@ -1,35 +1,141 @@
-# Política de Privacidade — Bot de Administração
-
-**Última atualização:** 9 de outubro de 2026
-
-Esta política explica como o aplicativo do Discord utilizado pela equipe administrativa da comunidade trata informações durante a execução de comandos e ações relacionados ao servidor FiveM.
-
-## 1. Informações utilizadas
-
-O aplicativo pode processar informações estritamente necessárias à execução de suas funcionalidades, como identificadores do Discord, identificadores do servidor FiveM e parâmetros enviados em comandos administrativos, conforme a operação executada.
-
-Não afirmamos que essas informações sejam armazenadas permanentemente. O armazenamento, quando existente, depende da implementação e da funcionalidade utilizada.
-
-## 2. Finalidade do tratamento
-
-As informações processadas são utilizadas para executar comandos autorizados, administrar funcionalidades da comunidade, realizar integrações com o servidor FiveM e proteger os sistemas contra usos indevidos.
-
-## 3. Compartilhamento
-
-As informações podem ser transmitidas entre o Discord e a infraestrutura do servidor FiveM quando isso for necessário para executar as funcionalidades solicitadas. Não comercializamos informações pessoais.
-
-## 4. Segurança
-
-São adotadas medidas técnicas e administrativas compatíveis com a operação do aplicativo para limitar o acesso às suas funcionalidades.
-
-## 5. Retenção e exclusão
-
-A retenção e a exclusão de informações dependem dos registros e sistemas efetivamente utilizados pelo aplicativo. Solicitações relacionadas a informações pessoais podem ser encaminhadas à equipe responsável pela comunidade.
-
-## 6. Alterações nesta política
-
-Esta política poderá ser atualizada para refletir mudanças nas funcionalidades ou no tratamento de informações.
-
-## 7. Contato
-
-Para dúvidas sobre privacidade, entre em contato com a equipe responsável pela comunidade por meio do servidor oficial do Discord.
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b10">
+  <meta name="description" content="Política de Privacidade do aplicativo de administração da comunidade Crush Bot e do servidor FiveM.">
+  <title>Política de Privacidade | Crush Bot</title>
+  <style>
+:root {
+  color-scheme: dark;
+  --bg: #090b10;
+  --panel: #11151e;
+  --panel-2: #171c28;
+  --text: #f4f6fb;
+  --muted: #a6afc2;
+  --line: rgba(255,255,255,.09);
+  --accent: #a3ff5f;
+  --accent-2: #75d93a;
+  --link: #c0ff91;
+  --max: 880px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 12% 0%, rgba(163,255,95,.11), transparent 34rem),
+    radial-gradient(ellipse at 100% 20%, rgba(76,116,255,.08), transparent 30rem),
+    var(--bg);
+  color: var(--text);
+  font: 16px/1.75 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+header { padding: 28px 0 18px; }
+.topbar { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.brand { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.02em; }
+.mark {
+  width: 42px; height:42px; border-radius:13px; display:grid; place-items:center;
+  color:#10150d; background:linear-gradient(145deg,var(--accent),#d4ffb5);
+  font-weight:950; box-shadow:0 8px 30px rgba(163,255,95,.13);
+}
+.brand small { display:block; color:var(--muted); font-weight:500; letter-spacing:0; font-size:12px; }
+nav { display:flex; flex-wrap:wrap; gap:8px; }
+nav a { padding:8px 12px; border:1px solid var(--line); border-radius:999px; color:var(--muted); font-size:13px; }
+nav a[aria-current="page"] { border-color:rgba(163,255,95,.35); color:var(--accent); background:rgba(163,255,95,.07); }
+.hero { padding:58px 0 30px; }
+.eyebrow { display:inline-flex; align-items:center; gap:8px; color:var(--accent); font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.14em; }
+.dot { width:7px; height:7px; border-radius:50%; background:var(--accent); box-shadow:0 0 12px rgba(163,255,95,.8); }
+h1 { margin:15px 0 14px; max-width:760px; font-size:clamp(34px,6vw,56px); line-height:1.08; letter-spacing:-.045em; }
+.lead { max-width:690px; color:var(--muted); font-size:17px; margin:0; }
+.meta { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
+.pill { border:1px solid var(--line); background:rgba(255,255,255,.025); padding:7px 11px; border-radius:999px; font-size:12px; color:var(--muted); }
+.layout { display:grid; grid-template-columns:220px minmax(0,1fr); gap:22px; align-items:start; padding:22px 0 64px; }
+.toc, article { border:1px solid var(--line); background:rgba(17,21,30,.86); border-radius:20px; }
+.toc { padding:18px; position:sticky; top:18px; }
+.toc strong { display:block; font-size:12px; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); margin-bottom:10px; }
+.toc a { display:block; padding:7px 0; font-size:13px; color:#c3cada; }
+article { padding:clamp(22px,4vw,38px); }
+section { scroll-margin-top:24px; }
+section + section { border-top:1px solid var(--line); margin-top:28px; padding-top:24px; }
+h2 { font-size:20px; line-height:1.3; margin:0 0 12px; letter-spacing:-.02em; }
+p { margin:0 0 12px; color:#d2d8e5; }
+p:last-child { margin-bottom:0; }
+ul { padding-left:20px; color:#d2d8e5; }
+li { padding-left:4px; margin:5px 0; }
+.note { margin-top:20px; padding:15px 17px; border:1px solid rgba(163,255,95,.2); background:rgba(163,255,95,.055); border-radius:13px; color:#dce9d3; font-size:13px; }
+footer { border-top:1px solid var(--line); padding:25px 0 38px; color:var(--muted); font-size:13px; }
+.footer-inner { display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+@media (max-width:700px) {
+  .topbar { align-items:flex-start; flex-direction:column; }
+  .hero { padding-top:40px; }
+  .layout { grid-template-columns:1fr; }
+  .toc { position:static; }
+  .toc-links { display:grid; grid-template-columns:1fr 1fr; column-gap:12px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="container topbar">
+    <a class="brand" href="privacidade.html" aria-label="Crush Bot - página inicial">
+      <span class="mark">C</span><span>Crush Bot<small>Aplicativo de administração</small></span>
+    </a>
+    <nav aria-label="Documentos">
+      <a href="termos.html">Termos de Serviço</a>
+      <a href="privacidade.html" aria-current="page">Política de Privacidade</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <div class="hero">
+    <span class="eyebrow"><span class="dot"></span> Transparência e segurança</span>
+    <h1>Política de Privacidade</h1>
+    <p class="lead">Entenda como informações podem ser processadas quando a equipe utiliza o aplicativo para administrar o Discord e executar ações relacionadas ao servidor FiveM.</p>
+    <div class="meta"><span class="pill">Última atualização: 9 de outubro de 2026</span><span class="pill">Tratamento limitado à operação</span></div>
+  </div>
+  <div class="layout">
+    <aside class="toc"><strong>Nesta página</strong><div class="toc-links">
+      <a href="#informacoes">1. Informações utilizadas</a><a href="#finalidade">2. Finalidades</a>
+      <a href="#armazenamento">3. Armazenamento e retenção</a><a href="#compartilhamento">4. Compartilhamento</a>
+      <a href="#seguranca">5. Segurança</a><a href="#direitos">6. Solicitações</a>
+      <a href="#alteracoes">7. Alterações</a><a href="#contato">8. Contato</a>
+    </div></aside>
+    <article>
+      <section id="informacoes"><h2>1. Informações que podem ser processadas</h2>
+        <p>Durante a execução de comandos, o aplicativo pode processar os dados necessários para realizar a operação solicitada. Isso pode incluir identificadores de usuário ou servidor do Discord, permissões, comandos e parâmetros enviados, identificadores do FiveM e resultados da ação.</p>
+        <p>As informações efetivamente processadas dependem das funcionalidades habilitadas. Não presuma que todos os exemplos acima sejam coletados ou armazenados: a implementação real do aplicativo determina isso.</p>
+      </section>
+      <section id="finalidade"><h2>2. Como as informações são utilizadas</h2>
+        <p>As informações podem ser utilizadas para validar permissões, executar comandos administrativos, comunicar-se com o servidor FiveM, responder a solicitações e diagnosticar erros ou uso indevido.</p>
+      </section>
+      <section id="armazenamento"><h2>3. Armazenamento e retenção</h2>
+        <p>O aplicativo não deve ser descrito como armazenando ou apagando dados de uma forma específica sem confirmação da implementação. Se o bot, o banco de dados, os registros de auditoria ou os sistemas integrados guardarem informações, a equipe responsável deverá identificar quais dados são mantidos, por quanto tempo e como podem ser excluídos.</p>
+      </section>
+      <section id="compartilhamento"><h2>4. Compartilhamento e serviços externos</h2>
+        <p>Quando necessário para executar uma função, informações podem ser transmitidas entre o Discord, a infraestrutura do bot e o servidor FiveM. Dados também podem ser tratados pelos provedores técnicos utilizados na hospedagem ou operação desses serviços, conforme suas próprias políticas.</p>
+        <p>As informações pessoais não são vendidas. Não compartilhe dados além do necessário para a finalidade operacional.</p>
+      </section>
+      <section id="seguranca"><h2>5. Segurança</h2>
+        <p>O acesso administrativo deve ser limitado a pessoas autorizadas e as credenciais do bot devem ser mantidas em segurança. Nenhum sistema conectado à internet pode garantir segurança absoluta.</p>
+      </section>
+      <section id="direitos"><h2>6. Dúvidas e solicitações sobre dados</h2>
+        <p>Para solicitar esclarecimentos ou tratar de informações relacionadas ao uso do aplicativo, entre em contato com a equipe responsável pela comunidade. A equipe avaliará a solicitação conforme os dados que efetivamente controla e a legislação aplicável.</p>
+      </section>
+      <section id="alteracoes"><h2>7. Alterações nesta política</h2>
+        <p>Esta política poderá ser atualizada quando houver mudanças nas funcionalidades, nos serviços utilizados ou nas práticas de tratamento de informações. A data no início da página indica a revisão mais recente.</p>
+      </section>
+      <section id="contato"><h2>8. Contato</h2>
+        <p>Para dúvidas sobre privacidade, utilize os canais oficiais da comunidade no Discord para entrar em contato com a equipe responsável.</p>
+      </section>
+      <div class="note">Antes de publicar, confirme se o bot mantém logs, banco de dados, histórico de comandos ou envia informações a APIs externas. Ajuste esta política para refletir essas práticas reais.</div>
+    </article>
+  </div>
+</main>
+<footer><div class="container footer-inner"><span>© 2026 Crush Bot · Documentação do aplicativo</span><span><a href="termos.html">← Voltar aos Termos de Serviço</a></span></div></footer>
+</body>
+</html>
